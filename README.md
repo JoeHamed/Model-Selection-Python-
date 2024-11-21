@@ -59,3 +59,34 @@ The dataset used is **Social_Network_Ads.csv**, which contains the following fea
 #### [[64 4]
 
 #### [ 3 29]]
+
+- **Accuracy on Test Set**: 93%
+
+### Model Evaluation (After Grid Search)
+- **Best Parameters**: `{'C': 0.5, 'gamma': 0.6, 'kernel': 'rbf'}`
+- **Best Accuracy from Grid Search**: 90.67%
+
+### k-Fold Cross Validation
+- **Mean Accuracy**: 90.33%
+- **Standard Deviation**: 6.57%
+
+---
+
+## Visualizations
+
+### Decision Boundary (Training Set)
+This visualization shows how the model separates the two classes (Purchased and Not Purchased) based on **Age** and **Estimated Salary**.
+
+<p align="center">
+<img src="path_to_training_set_visualization.png" alt="Training Set Decision Boundary" width="600">
+</p>
+
+---
+
+## How to Run the Code
+
+1. Clone this repository:
+ ```bash
+ git clone https://github.com/yourusername/kernel-svm-grid-search.git
+ cd kernel-svm-grid-search
+
