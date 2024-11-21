@@ -72,21 +72,27 @@ The dataset used is **Social_Network_Ads.csv**, which contains the following fea
 
 ---
 
-## Visualizations
-
-### Decision Boundary (Training Set)
-This visualization shows how the model separates the two classes (Purchased and Not Purchased) based on **Age** and **Estimated Salary**.
-
-<p align="center">
-<img src="path_to_training_set_visualization.png" alt="Training Set Decision Boundary" width="600">
-</p>
-
----
-
 ## How to Run the Code
 
 1. Clone this repository:
  ```bash
  git clone https://github.com/yourusername/kernel-svm-grid-search.git
  cd kernel-svm-grid-search
+```
+2. Install the required Python packages:
+   `pip install -r requirements.txt`
+3. Place the `Social_Network_Ads.csv` file in the root directory.
+4. Run the script.
+
+### Technologies Used
+- Python Libraries:
+  - NumPy for numerical computations
+  - Pandas for data manipulation
+  - scikit-learn for machine learning algorithms
+Matplotlib for data visualization
+- Algorithms:
+  - Support Vector Machine (Kernel SVM)
+  - Grid Search
+  - k-Fold Cross Validation
+
 
