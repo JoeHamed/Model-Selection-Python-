@@ -76,8 +76,7 @@ The dataset used is **Social_Network_Ads.csv**, which contains the following fea
 
 1. Clone this repository:
  ```bash
- git clone https://github.com/yourusername/kernel-svm-grid-search.git
- cd kernel-svm-grid-search
+ git clone https://github.com/JoeHamed/Model-Selection-Python-.git
 ```
 2. Install the required Python packages:
    `pip install -r requirements.txt`
