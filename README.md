@@ -1,26 +1,61 @@
 # Kernel SVM with Grid Search and k-Fold Cross Validation
 
-This project demonstrates the use of a Kernel Support Vector Machine (SVM) classifier to predict user behavior based on a dataset. It includes steps for data preprocessing, model training, evaluation, and optimization using Grid Search and k-Fold Cross Validation.
+This project demonstrates the use of a Kernel Support Vector Machine (SVM) classifier to predict user behavior based on the **Social Network Ads** dataset. It includes steps for data preprocessing, model training, evaluation, and optimization using **Grid Search** and **k-Fold Cross Validation**.
 
-## Project Overview
+---
 
-- **Dataset:** `Social_Network_Ads.csv`
-- **Goal:** Predict whether a user will purchase a product based on their age and estimated salary.
-- **Algorithm:** Support Vector Machine (SVM) with RBF kernel
-- **Evaluation:** Accuracy, Confusion Matrix, k-Fold Cross Validation
-- **Optimization:** Grid Search for hyperparameter tuning
+## Table of Contents
+- [Introduction](#introduction)
+- [Dataset](#dataset)
+- [Workflow](#workflow)
+  - [1. Data Preprocessing](#1-data-preprocessing)
+  - [2. Model Training](#2-model-training)
+  - [3. Model Evaluation](#3-model-evaluation)
+  - [4. Model Optimization](#4-model-optimization)
+- [Results](#results)
+- [Visualizations](#visualizations)
+- [How to Run the Code](#how-to-run-the-code)
+- [Technologies Used](#technologies-used)
+
+---
+
+## Introduction
+The goal of this project is to classify whether a user will purchase a product based on their **Age** and **Estimated Salary** using a **Kernel SVM** model. The model is evaluated for performance and optimized using **Grid Search** and **k-Fold Cross Validation**.
+
+---
+
+## Dataset
+The dataset used is **Social_Network_Ads.csv**, which contains the following features:
+- **Age**: Age of the user
+- **Estimated Salary**: Annual salary of the user
+- **Purchased**: Binary target variable (1 = Purchased, 0 = Not Purchased)
 
 ---
 
 ## Workflow
 
-### 1. Importing Libraries
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd
-```
-### 2. Importing the Dataset
-dataset = pd.read_csv('Social_Network_Ads.csv')
-X = dataset.iloc[:, :-1].values
-y = dataset.iloc[:, -1].values
+### 1. Data Preprocessing
+1. Load the dataset and split into **independent (X)** and **dependent (y)** variables.
+2. Split the data into **training** and **test sets**.
+3. Apply **feature scaling** using `StandardScaler` to normalize the input features.
+
+### 2. Model Training
+- Train a **Kernel SVM** model with the RBF kernel on the training set using `SVC`.
+
+### 3. Model Evaluation
+- Use the **Confusion Matrix** and **Accuracy Score** to evaluate the model's predictions on the test set.
+- Apply **k-Fold Cross Validation** to calculate the mean accuracy and standard deviation, ensuring the model's reliability across multiple splits.
+
+### 4. Model Optimization
+- Use **Grid Search** to find the best hyperparameters (`C` and `gamma`) for the SVM model.
+- Perform **10-fold Cross Validation** during the Grid Search process to select the best-performing parameters.
+
+---
+
+## Results
+
+### Model Evaluation (Before Grid Search)
+- **Confusion Matrix**: 
+#### [[64 4]
+
+#### [ 3 29]]
