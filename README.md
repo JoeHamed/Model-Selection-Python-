@@ -19,3 +19,7 @@ This project demonstrates the use of a Kernel Support Vector Machine (SVM) class
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+```
+dataset = pd.read_csv('Social_Network_Ads.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
