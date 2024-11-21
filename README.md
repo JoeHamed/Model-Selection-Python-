@@ -85,12 +85,12 @@ The dataset used is **Social_Network_Ads.csv**, which contains the following fea
 4. Run the script.
 
 ### Technologies Used
-- Python Libraries:
+- **Python Libraries**:
   - NumPy for numerical computations
   - Pandas for data manipulation
   - scikit-learn for machine learning algorithms
 Matplotlib for data visualization
-- Algorithms:
+- **Algorithms**:
   - Support Vector Machine (Kernel SVM)
   - Grid Search
   - k-Fold Cross Validation
