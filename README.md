@@ -13,7 +13,6 @@ This project demonstrates the use of a Kernel Support Vector Machine (SVM) class
   - [3. Model Evaluation](#3-model-evaluation)
   - [4. Model Optimization](#4-model-optimization)
 - [Results](#results)
-- [Visualizations](#visualizations)
 - [How to Run the Code](#how-to-run-the-code)
 - [Technologies Used](#technologies-used)
 
